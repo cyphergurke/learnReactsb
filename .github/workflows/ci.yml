@@ -39,4 +39,4 @@ jobs:
       - name: Pulish to Chromatic
         uses: chromatic/action@v1
         with:
-          projectToken: ${{secret.CHROMATIC_PROJECT_TOKEN}}
+          projectToken: ${{secrets.CHROMATIC_PROJECT_TOKEN}}
