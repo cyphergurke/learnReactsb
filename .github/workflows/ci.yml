@@ -17,8 +17,10 @@ jobs:
   steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with: 
+          fetch-depth: 0 #fetch full history
 
-      - name: Set up repository
+      - name: Set up Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version}}
@@ -36,3 +38,5 @@ jobs:
         
       - name: Pulish to Chromatic
         uses: chromatic/action@v1
+        with:
+          projectToken: ${{secret.CHROMATIC_PROJECT_TOKEN}}
