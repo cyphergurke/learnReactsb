@@ -1,3 +1,5 @@
+[![CI workflow](https://github.com/cyphergurke/learnReactsb/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/cyphergurke/learnReactsb/actions/workflows/ci.yml)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
