@@ -1,4 +1,5 @@
 [![CI workflow](https://github.com/cyphergurke/learnReactsb/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/cyphergurke/learnReactsb/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/cyphergurke/learnReactsb/branch/main/graph/badge.svg?token=BAEKZX1RFX)](https://codecov.io/gh/cyphergurke/learnReactsb)
 
 # Getting Started with Create React App
 
