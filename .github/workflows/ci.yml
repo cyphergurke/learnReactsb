@@ -1,0 +1,31 @@
+name: CI workflow
+
+#Event
+on: push
+
+#List of jos
+jobs:
+ test:
+  #runner
+  runs-on: ubuntu-latest
+
+  strategy:
+    matrix:
+      node-version: [14.x]
+    
+  #Jobs steps
+  steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up repository
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version}}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run the tests
+        run: npm test
+
